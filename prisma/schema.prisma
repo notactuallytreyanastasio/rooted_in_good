@@ -1,0 +1,167 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+// ── Auth ──
+
+model User {
+  id             String    @id @default(cuid())
+  name           String
+  email          String    @unique
+  hashedPassword String
+  image          String?
+  role           String    @default("USER") // USER | ADMIN
+  createdAt      DateTime  @default(now())
+  updatedAt      DateTime  @updatedAt
+
+  purchases  Purchase[]
+  checkins   DailyCheckIn[]
+  reflections Reflection[]
+}
+
+// ── Guided Journey ──
+
+model JourneyWeek {
+  id               String @id @default(cuid())
+  weekNumber       Int    @unique
+  title            String
+  description      String
+  theme            String
+  touchFocus       String
+  listenFocus      String
+  qualityTimeFocus String
+
+  days        JourneyDay[]
+  reflections Reflection[]
+}
+
+model JourneyDay {
+  id               String @id @default(cuid())
+  weekId           String
+  dayNumber        Int
+  touchPrompt      String
+  listenPrompt     String
+  qualityTimePrompt String
+  tip              String
+
+  week JourneyWeek @relation(fields: [weekId], references: [id])
+
+  @@unique([weekId, dayNumber])
+}
+
+model DailyCheckIn {
+  id                   String   @id @default(cuid())
+  userId               String
+  date                 String   // YYYY-MM-DD
+  touchCompleted       Boolean  @default(false)
+  listenCompleted      Boolean  @default(false)
+  qualityTimeCompleted Boolean  @default(false)
+  touchNotes           String?
+  listenNotes          String?
+  qualityTimeNotes     String?
+  createdAt            DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id])
+
+  @@unique([userId, date])
+}
+
+model Reflection {
+  id        String   @id @default(cuid())
+  userId    String
+  weekId    String
+  content   String
+  mood      String
+  createdAt DateTime @default(now())
+
+  user User        @relation(fields: [userId], references: [id])
+  week JourneyWeek @relation(fields: [weekId], references: [id])
+
+  @@unique([userId, weekId])
+}
+
+// ── E-commerce ──
+
+model Product {
+  id          String @id @default(cuid())
+  name        String
+  slug        String @unique
+  description String
+  price       Float
+  type        String // BOOK | WORKBOOK | COURSE
+  imageUrl    String @default("")
+  previewUrl  String?
+  downloadUrl String?
+
+  purchases Purchase[]
+}
+
+model Purchase {
+  id        String   @id @default(cuid())
+  userId    String
+  productId String
+  status    String   @default("COMPLETED")
+  createdAt DateTime @default(now())
+
+  user    User    @relation(fields: [userId], references: [id])
+  product Product @relation(fields: [productId], references: [id])
+
+  @@unique([userId, productId])
+}
+
+// ── Community ──
+
+model Meeting {
+  id          String  @id @default(cuid())
+  title       String
+  description String
+  dayOfWeek   Int     // 0=Sunday, 6=Saturday
+  time        String  // HH:MM
+  timezone    String  @default("America/New_York")
+  meetingUrl  String
+  isRecurring Boolean @default(true)
+}
+
+// ── Marketing Admin ──
+
+model SocialPost {
+  id           String   @id @default(cuid())
+  platform     String   // INSTAGRAM | TIKTOK | FACEBOOK
+  title        String
+  content      String
+  imageUrl     String?
+  scheduledFor DateTime?
+  status       String   @default("DRAFT") // DRAFT | SCHEDULED | POSTED
+  campaignId   String?
+  createdAt    DateTime @default(now())
+
+  campaign Campaign? @relation(fields: [campaignId], references: [id])
+}
+
+model Campaign {
+  id          String   @id @default(cuid())
+  name        String
+  description String
+  startDate   DateTime
+  endDate     DateTime
+  status      String   @default("PLANNING") // PLANNING | ACTIVE | COMPLETED
+  createdAt   DateTime @default(now())
+
+  posts SocialPost[]
+}
+
+model ShareableContent {
+  id            String   @id @default(cuid())
+  title         String
+  imageUrl      String
+  caption       String
+  hashtags      String   // JSON array stored as string
+  category      String
+  downloadCount Int      @default(0)
+  createdAt     DateTime @default(now())
+}

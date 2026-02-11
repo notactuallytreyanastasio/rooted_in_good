@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+@theme {
+  /* Touch touchpoint - growth, nature */
+  --color-touch-light: #C8E6C9;
+  --color-touch: #A5D6A7;
+  --color-touch-dark: #66BB6A;
+
+  /* Listen touchpoint - calm, trust */
+  --color-listen-light: #BBDEFB;
+  --color-listen: #90CAF9;
+  --color-listen-dark: #42A5F5;
+
+  /* Quality Time touchpoint - warmth, love */
+  --color-quality-light: #F8BBD0;
+  --color-quality: #F48FB1;
+  --color-quality-dark: #EC407A;
+
+  /* Accents - joy, energy */
+  --color-accent-light: #FFF9C4;
+  --color-accent: #FFF176;
+  --color-accent-dark: #FFEE58;
+
+  /* Neutrals */
+  --color-warm-white: #FAFAF8;
+  --color-soft-gray: #F5F5F5;
+  --color-border: #E0E0E0;
+  --color-text: #2D3436;
+  --color-text-muted: #636E72;
+
+  /* Font */
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+body {
+  background-color: var(--color-warm-white);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+}
+
+/* Fade-in animation for page content */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.4s ease-out both;
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.5s ease-out both;
+}
+
+/* Stagger children animations */
+.animate-stagger > * {
+  animation: fade-in-up 0.4s ease-out both;
+}
+.animate-stagger > *:nth-child(1) { animation-delay: 0ms; }
+.animate-stagger > *:nth-child(2) { animation-delay: 80ms; }
+.animate-stagger > *:nth-child(3) { animation-delay: 160ms; }
+.animate-stagger > *:nth-child(4) { animation-delay: 240ms; }
+.animate-stagger > *:nth-child(5) { animation-delay: 320ms; }
+.animate-stagger > *:nth-child(6) { animation-delay: 400ms; }
+
+/* Smooth card hover lift */
+.hover-lift {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.hover-lift:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px -5px rgba(0, 0, 0, 0.08);
+}
+
+/* Focus ring for accessibility */
+*:focus-visible {
+  outline: 2px solid var(--color-touch);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
