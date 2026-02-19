@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "hash": "0ef55e61e1b7cb6ee0650c69c681fc9e5e4d36b1",
+    "short_hash": "0ef55e6",
+    "author": "Robert Grayson",
+    "date": "2026-02-11T11:44:45-05:00",
+    "message": "feat: initial commit with GitHub Pages static export\n\nThe Rooted in Good Method - a parenting methodology platform built with\nNext.js 16, TypeScript, Tailwind CSS v4, and Prisma/SQLite.\n\nIncludes password-gated GitHub Pages deployment via GitHub Actions.\nStatic export conditionally enabled with STATIC_EXPORT env var.\n\nCo-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>",
+    "files_changed": 0
+  }
+]
