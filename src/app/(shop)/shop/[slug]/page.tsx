@@ -83,7 +83,7 @@ export default async function ProductDetailPage({
           where: { type: product.type, id: { not: product.id } },
           take: 3,
         })
-      ).map((p) => ({
+      ).map((p: any) => ({
         id: p.id,
         name: p.name,
         slug: p.slug,

@@ -109,7 +109,7 @@ export default async function WeekPage({ params }: WeekPageProps) {
 
       {/* Day cards grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        {week.days.map((day) => {
+        {week.days.map((day: { id: string; dayNumber: number; touchPrompt: string; listenPrompt: string; qualityTimePrompt: string; tip: string }) => {
           const isReflectionDay = day.dayNumber === 7;
 
           return (

@@ -8,11 +8,11 @@ import type { ShareableContent } from "@/types";
 const sampleContent: ShareableContent[] = [
   {
     id: "1",
-    title: "20 Seconds Changes Everything",
+    title: "9 Minutes Changes Everything",
     imageUrl: "",
     caption:
-      "A 20-second hug releases oxytocin and tells your child: you are safe.",
-    hashtags: ["#RootedInGood", "#20SecondHug", "#ParentingWithPresence"],
+      "Focused Support + Intentional Listening + Physical Connection. Just 9 intentional minutes a day.",
+    hashtags: ["#RootedInGood", "#9Minutes", "#ConnectionBeforeCorrection"],
     category: "Quotes",
     downloadCount: 147,
   },
@@ -31,7 +31,7 @@ const sampleContent: ShareableContent[] = [
     title: "The 3 Touchpoints",
     imageUrl: "",
     caption:
-      "Touch (20s) + Listen (10m) + Quality Time (20m) = Transformation.",
+      "Focused Support (2m) + Intentional Listening (5m) + Physical Connection (2m) = Transformation.",
     hashtags: ["#RootedInGood", "#3Touchpoints", "#DailyConnection"],
     category: "Infographics",
     downloadCount: 234,

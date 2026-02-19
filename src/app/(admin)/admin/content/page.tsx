@@ -9,8 +9,8 @@ const samplePosts: SocialPost[] = [
   {
     id: "1",
     platform: "INSTAGRAM",
-    title: "20-Second Hug Challenge",
-    content: "Try this: Hold your child for a full 20 seconds today...",
+    title: "9-Minute Connection Challenge",
+    content: "Try this: 2 minutes of focused support, 5 minutes of listening, 2 minutes of closeness...",
     scheduledFor: "2026-02-14T10:00:00",
     status: "SCHEDULED",
   },
@@ -40,7 +40,7 @@ const samplePosts: SocialPost[] = [
   {
     id: "5",
     platform: "TIKTOK",
-    title: "Quality Time Ideas for Teens",
+    title: "Physical Connection Ideas for Teens",
     content: "Struggling to connect with your teenager?...",
     scheduledFor: "2026-02-18T16:00:00",
     status: "SCHEDULED",
@@ -56,8 +56,8 @@ const samplePosts: SocialPost[] = [
   {
     id: "7",
     platform: "INSTAGRAM",
-    title: "The Science of a 20-Second Hug",
-    content: "Did you know that a hug lasting 20 seconds triggers...",
+    title: "The Science Behind 9 Minutes",
+    content: "Did you know that just 9 intentional minutes a day can transform your relationship?...",
     status: "DRAFT",
   },
   {

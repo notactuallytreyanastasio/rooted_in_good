@@ -25,6 +25,9 @@ export default function Navigation() {
             <Link href="/about" className="text-text-muted hover:text-text transition-colors text-sm font-medium">
               The Method
             </Link>
+            <Link href="/quiz" className="text-touch-dark hover:text-touch transition-colors text-sm font-medium">
+              Take the Quiz
+            </Link>
             <Link href="/shop" className="text-text-muted hover:text-text transition-colors text-sm font-medium">
               Shop
             </Link>
@@ -57,6 +60,9 @@ export default function Navigation() {
           <div className="md:hidden pb-4 space-y-2">
             <Link href="/about" className="block px-3 py-2 rounded-lg text-text-muted hover:bg-soft-gray transition-colors" onClick={() => setMenuOpen(false)}>
               The Method
+            </Link>
+            <Link href="/quiz" className="block px-3 py-2 rounded-lg text-touch-dark font-medium hover:bg-touch-light/30 transition-colors" onClick={() => setMenuOpen(false)}>
+              Take the Quiz
             </Link>
             <Link href="/shop" className="block px-3 py-2 rounded-lg text-text-muted hover:bg-soft-gray transition-colors" onClick={() => setMenuOpen(false)}>
               Shop

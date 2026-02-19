@@ -26,7 +26,7 @@ export default async function JourneyPage() {
   // Build the full 8 weeks, using data if available, otherwise placeholders
   const allWeeks = Array.from({ length: TOTAL_WEEKS }, (_, i) => {
     const weekNumber = i + 1;
-    const dataWeek = weeks.find((w) => w.weekNumber === weekNumber);
+    const dataWeek = weeks.find((w: { weekNumber: number }) => w.weekNumber === weekNumber);
     return {
       weekNumber,
       title: dataWeek?.title ?? `Week ${weekNumber}`,

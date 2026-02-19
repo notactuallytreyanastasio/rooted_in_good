@@ -34,7 +34,7 @@ const touchpointConfig: {
     buttonBg: "bg-touch",
     buttonHover: "hover:bg-touch-dark",
     prompt:
-      "Give your child a 20-second hug. Hold them close, breathe slowly, and let them feel your presence. No words needed.",
+      "Step in gently before your child becomes overwhelmed. Lay out clothes, prep a bag, or handle one small thing that makes their next moment easier.",
   },
   {
     type: "listen",
@@ -46,7 +46,7 @@ const touchpointConfig: {
     buttonBg: "bg-listen",
     buttonHover: "hover:bg-listen-dark",
     prompt:
-      "Sit with your child and ask: 'What was the best part of your day?' Listen without interrupting. Let them lead the conversation.",
+      "Put distractions aside. Sit with your child and let them lead the conversation. No fixing, no teaching — just listen. Your presence is the message.",
   },
   {
     type: "qualityTime",
@@ -58,7 +58,7 @@ const touchpointConfig: {
     buttonBg: "bg-quality",
     buttonHover: "hover:bg-quality-dark",
     prompt:
-      "Spend 20 minutes doing whatever your child wants. Follow their lead. No phones, no agenda, just being together.",
+      "Offer closeness, comfort, or calm. A 20-second hug, a hand on their back, sitting close — remind your child they are safe and loved.",
   },
 ];
 

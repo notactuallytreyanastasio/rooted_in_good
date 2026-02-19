@@ -36,6 +36,8 @@
     ".next/dev/types/**/*.ts"
   ],
   "exclude": [
-    "node_modules"
+    "node_modules",
+    "apps/mobile",
+    "there_is_a_horse_in_aisle_five"
   ]
 }

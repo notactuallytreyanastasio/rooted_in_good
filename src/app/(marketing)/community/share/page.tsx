@@ -16,11 +16,11 @@ interface ShareableItem {
 const shareableItems: ShareableItem[] = [
   {
     id: "1",
-    title: "20 Seconds of Touch Changes Everything",
+    title: "9 Minutes Can Change Everything",
     caption:
-      "A 20-second hug releases oxytocin, lowers cortisol, and tells your child: you are safe, you are loved. Try it today.",
+      "Focused Support (2 min) + Intentional Listening (5 min) + Physical Connection (2 min) = a transformed relationship. Try it today.",
     gradient: "from-touch-light to-touch",
-    hashtags: ["#RootedInGood", "#ParentingWithPresence", "#20SecondHug"],
+    hashtags: ["#RootedInGood", "#9Minutes", "#ConnectionBeforeCorrection"],
     category: "Quotes",
   },
   {
@@ -36,16 +36,16 @@ const shareableItems: ShareableItem[] = [
     id: "3",
     title: "Presence Over Perfection",
     caption:
-      "You don't need to be a perfect parent. You need to be a present one. 30 minutes and 20 seconds. That's all it takes.",
+      "You don't need to be a perfect parent. You need to be a present one. 9 intentional minutes. That's all it takes.",
     gradient: "from-quality-light to-quality",
     hashtags: ["#RootedInGood", "#PresenceOverPerfection", "#GoodEnoughParent"],
     category: "Quotes",
   },
   {
     id: "4",
-    title: "The 10-Minute Listen Challenge",
+    title: "The 5-Minute Listen Challenge",
     caption:
-      "Set a timer for 10 minutes. Sit with your child. Ask one question. Then just listen. No advice. No judgment. Just presence.",
+      "Set a timer for 5 minutes. Sit with your child. Ask one question. Then just listen. No advice. No judgment. Just presence.",
     gradient: "from-listen-light via-listen to-listen-dark",
     hashtags: ["#RootedInGood", "#ListenChallenge", "#IntentionalParenting"],
     category: "Tips",
@@ -63,7 +63,7 @@ const shareableItems: ShareableItem[] = [
     id: "6",
     title: "The 3 Touchpoints Infographic",
     caption:
-      "Touch (20 sec) + Listen (10 min) + Quality Time (20 min) = A transformed relationship. Save this and try it for one week.",
+      "Focused Support (2 min) + Intentional Listening (5 min) + Physical Connection (2 min) = 9 minutes that transform your relationship.",
     gradient: "from-touch via-listen to-quality",
     hashtags: [
       "#RootedInGood",

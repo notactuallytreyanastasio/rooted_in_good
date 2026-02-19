@@ -15,7 +15,7 @@ import {
 export const metadata: Metadata = {
   title: "About the Method",
   description:
-    "The science behind the 3 touchpoints: Touch (20s), Listen (10min), and Quality Time (20min). An 8-week journey to transform your parenting.",
+    "The science behind the 3 touchpoints: Focused Support (2min), Intentional Listening (5min), and Physical Connection (2min). Just 9 intentional minutes a day to transform your parenting.",
 };
 
 export default function AboutPage() {
@@ -30,7 +30,7 @@ export default function AboutPage() {
               The Rooted in Good Method
             </p>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-text leading-tight">
-              30 Minutes and 20 Seconds to{" "}
+              9 Intentional Minutes to{" "}
               <span className="text-touch-dark">Transform</span> Your Family
             </h1>
             <p className="mt-6 text-lg sm:text-xl text-text-muted max-w-2xl mx-auto leading-relaxed">
@@ -53,7 +53,7 @@ export default function AboutPage() {
           </p>
         </div>
 
-        {/* Touchpoint 1: Touch */}
+        {/* Touchpoint 1: Focused Support */}
         <div className="mb-16">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
@@ -61,49 +61,50 @@ export default function AboutPage() {
                 <Heart className="text-touch-dark" size={28} />
               </div>
               <h3 className="text-2xl font-bold text-text mb-2">
-                Touchpoint 1: Touch
+                Touchpoint 1: Focused Support
               </h3>
               <p className="text-3xl font-bold text-touch-dark mb-4">
-                20 seconds
+                2 minutes
               </p>
               <div className="space-y-4 text-text-muted leading-relaxed">
                 <p>
-                  Physical touch is the most primal form of connection. A
-                  20-second hug is long enough to trigger the release of
-                  oxytocin, the bonding hormone, in both parent and child.
+                  Gently step in to help before your child becomes overwhelmed
+                  — showing them you&apos;ve got their back. This is proactive
+                  support, not rescuing. It&apos;s offered before overwhelm, not
+                  after.
                 </p>
                 <p>
-                  This isn&apos;t about forced affection. It&apos;s about finding
-                  the form of physical connection that works for your family: a
-                  hug, a hand on the shoulder, a high-five, holding hands on a
-                  walk, or a gentle pat on the back.
+                  In real life, this looks like laying out socks before the
+                  morning scramble, packing lunch so your child can breathe
+                  instead of panic, or placing the backpack and water bottle by
+                  the door the night before.
                 </p>
                 <p>
-                  For older kids and teens, respect their boundaries. A fist
-                  bump, a side-hug, or even sitting close enough that your
-                  shoulders touch counts. The point is intentional, loving
-                  physical presence.
+                  Independence isn&apos;t the absence of support — it&apos;s
+                  the result of it. Children who feel emotionally safe are more
+                  likely to take risks, try new things, and persist through
+                  challenges.
                 </p>
               </div>
             </div>
             <div className="bg-gradient-to-br from-touch-light to-touch/30 rounded-2xl p-12 flex items-center justify-center aspect-square max-w-sm mx-auto">
               <div className="text-center">
                 <Heart className="mx-auto text-touch-dark mb-4" size={64} />
-                <p className="text-5xl font-bold text-touch-dark">20s</p>
-                <p className="text-text-muted mt-2">of intentional touch</p>
+                <p className="text-5xl font-bold text-touch-dark">2m</p>
+                <p className="text-text-muted mt-2">of focused support</p>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Touchpoint 2: Listen */}
+        {/* Touchpoint 2: Intentional Listening */}
         <div className="mb-16">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="order-2 md:order-1 bg-gradient-to-br from-listen-light to-listen/30 rounded-2xl p-12 flex items-center justify-center aspect-square max-w-sm mx-auto">
               <div className="text-center">
                 <Ear className="mx-auto text-listen-dark mb-4" size={64} />
-                <p className="text-5xl font-bold text-listen-dark">10m</p>
-                <p className="text-text-muted mt-2">of focused listening</p>
+                <p className="text-5xl font-bold text-listen-dark">5m</p>
+                <p className="text-text-muted mt-2">of intentional listening</p>
               </div>
             </div>
             <div className="order-1 md:order-2">
@@ -111,34 +112,33 @@ export default function AboutPage() {
                 <Ear className="text-listen-dark" size={28} />
               </div>
               <h3 className="text-2xl font-bold text-text mb-2">
-                Touchpoint 2: Listen
+                Touchpoint 2: Intentional Listening
               </h3>
               <p className="text-3xl font-bold text-listen-dark mb-4">
-                10 minutes
+                5 minutes
               </p>
               <div className="space-y-4 text-text-muted leading-relaxed">
                 <p>
-                  Active listening means putting down whatever you&apos;re doing,
-                  making eye contact, and giving your child your full attention.
-                  No phone. No multitasking. No fixing.
+                  Put distractions aside and let your child feel fully heard
+                  — without trying to fix or teach. No phone, no multitasking.
+                  Child-led conversation where they choose the topic.
                 </p>
                 <p>
-                  Children don&apos;t always need solutions. They need to feel
-                  heard. When you listen without interrupting or jumping to
-                  advice, you communicate respect and emotional safety.
+                  Connection doesn&apos;t always happen face-to-face. Sometimes
+                  it happens side-by-side — driving together, washing dishes,
+                  or sitting on the floor while they tell you about their day.
                 </p>
                 <p>
-                  Ask open-ended questions. &ldquo;What was the best part of
-                  your day?&rdquo; &ldquo;Tell me more about that.&rdquo;
-                  &ldquo;How did that make you feel?&rdquo; Then let them talk.
-                  Silence is okay. The space you hold is the gift.
+                  When your child is silent, that&apos;s still part of the
+                  rhythm. They need to feel you before they can talk to you.
+                  Your presence is the message.
                 </p>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Touchpoint 3: Quality Time */}
+        {/* Touchpoint 3: Physical Connection */}
         <div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
@@ -146,36 +146,36 @@ export default function AboutPage() {
                 <Users className="text-quality-dark" size={28} />
               </div>
               <h3 className="text-2xl font-bold text-text mb-2">
-                Touchpoint 3: Quality Time
+                Touchpoint 3: Physical Connection
               </h3>
               <p className="text-3xl font-bold text-quality-dark mb-4">
-                20 minutes
+                2 minutes
               </p>
               <div className="space-y-4 text-text-muted leading-relaxed">
                 <p>
-                  Twenty minutes of undivided, child-led time. No agenda, no
-                  goals, no screens. Follow their lead. If they want to build
-                  Legos, you build Legos. If they want to walk in silence, you
-                  walk in silence.
+                  Offer closeness, comfort, or calm to remind your child they
+                  are safe and loved. A 20-second hug releases oxytocin — the
+                  bonding hormone — which lowers cortisol and promotes calm.
                 </p>
                 <p>
-                  This is the touchpoint that kids remember. It&apos;s not about
-                  elaborate activities or expensive outings. It&apos;s about
-                  showing up and being fully present with whatever they want to
-                  do.
+                  This doesn&apos;t have to be a hug. It can be a gentle hand on
+                  their back during a hard moment, a secret handshake, tracing a
+                  small heart on their palm, or sitting close on the couch with
+                  a blanket tucked just right.
                 </p>
                 <p>
-                  For teens, this might look like driving together, cooking a
-                  meal, or sitting in the same room while they do homework.
-                  Proximity with availability is its own form of quality time.
+                  When a child is dysregulated, their nervous system is in
+                  survival mode. Physical presence is often the most effective
+                  first step, not the last resort. You are your child&apos;s
+                  anchor.
                 </p>
               </div>
             </div>
             <div className="bg-gradient-to-br from-quality-light to-quality/30 rounded-2xl p-12 flex items-center justify-center aspect-square max-w-sm mx-auto">
               <div className="text-center">
                 <Users className="mx-auto text-quality-dark mb-4" size={64} />
-                <p className="text-5xl font-bold text-quality-dark">20m</p>
-                <p className="text-text-muted mt-2">of undivided presence</p>
+                <p className="text-5xl font-bold text-quality-dark">2m</p>
+                <p className="text-text-muted mt-2">of physical connection</p>
               </div>
             </div>
           </div>
@@ -205,27 +205,27 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {[
               {
-                title: "Oxytocin Release",
+                title: "Oxytocin & The 20-Second Hug",
                 description:
-                  "Physical touch lasting 20 seconds or more triggers the release of oxytocin, reducing stress hormones in both parent and child. Research from the University of North Carolina shows that regular hugging lowers blood pressure and cortisol levels.",
+                  "A 20-second hug releases oxytocin — the bonding hormone — which lowers cortisol, stabilizes heart rate, and promotes calm (Light et al., 2005). Physical affection strengthens emotional bonding across all ages, from toddlers to teens (Feldman, 2007).",
                 color: "touch",
               },
               {
-                title: "Secure Attachment",
+                title: "Attunement & The Still Face Experiment",
                 description:
-                  "Active listening builds secure attachment, which research by John Bowlby and Mary Ainsworth shows is the strongest predictor of emotional resilience, relationship quality, and mental health throughout life.",
+                  "The Still Face Experiment (Tronick, 1975) showed that infants become highly distressed when a caregiver stops responding emotionally — attunement isn't just nice, it's neurologically necessary. Open, warm communication predicts reduced behavioral problems and stronger coping (Wang & Kenny, 2014).",
                 color: "listen",
               },
               {
-                title: "Neural Co-Regulation",
+                title: "Polyvagal Theory & Co-Regulation",
                 description:
-                  "When a parent is fully present, their calm nervous system helps regulate their child's developing nervous system. This process, called co-regulation, literally shapes brain architecture during childhood.",
+                  "Polyvagal Theory (Porges, 2011) explains how voice tone, eye contact, and touch activate the body's social safety system, shifting the nervous system from protection into connection. Your calm presence literally changes your child's brain chemistry.",
                 color: "quality",
               },
               {
-                title: "Habit Formation",
+                title: "Zone of Proximal Development",
                 description:
-                  "Research on habit formation shows that simple, repeatable routines become automatic in 8-12 weeks. The Rooted in Good Method's 8-week journey is designed to turn connection from effort into instinct.",
+                  "Vygotsky's research shows children thrive in the space between what they can do alone and what they can do with support. Antecedent strategies — adjusting the environment before behavior escalates — reduce challenging behavior (Blair & Raver, 2015).",
                 color: "touch",
               },
             ].map((item) => (
@@ -376,7 +376,7 @@ export default function AboutPage() {
                 question:
                   "I'm a single parent with multiple kids. How do I fit this in?",
                 answer:
-                  "The beauty of the method is its simplicity. You don't need to do all three touchpoints with every child at the same time. A 20-second hug can happen at the door. Listening can happen at the dinner table. Quality time can rotate between children. Start with one child, one touchpoint, and build from there.",
+                  "The beauty of the method is its simplicity — it's only 9 minutes a day. You don't need to do all three touchpoints with every child at the same time. Focused support can happen the night before. Listening can happen at the dinner table. A hug can happen at the door. Start with one child, one touchpoint, and build from there.",
               },
               {
                 question: "What if my child resists physical touch?",
@@ -386,12 +386,12 @@ export default function AboutPage() {
               {
                 question: "Is this a replacement for therapy?",
                 answer:
-                  "No. The Rooted in Good Method is a daily connection practice, not a clinical intervention. If your child or family is dealing with serious behavioral, emotional, or mental health challenges, please seek professional support. This method works beautifully alongside therapy and can amplify its benefits.",
+                  "No. The RootedInGood Method is a daily connection practice, not a clinical intervention. If your child or family is dealing with serious behavioral, emotional, or mental health challenges, please seek professional support. This method works beautifully alongside therapy and can amplify its benefits. As the book says: asking for support reflects strength, not weakness.",
               },
               {
                 question: "Do I need to buy the book to start?",
                 answer:
-                  "The core method — Touch, Listen, Quality Time — is simple enough to start today. The book provides the 8-week guided journey, daily prompts, the science behind each touchpoint, and stories from other parents that make the practice richer and more sustainable. Most parents find the structure helps them stick with it.",
+                  "The core method — Focused Support, Intentional Listening, Physical Connection — is simple enough to start today. The book provides the 8-week guided journey, daily prompts, the science behind each touchpoint, and stories from other parents that make the practice richer and more sustainable. Most parents find the structure helps them stick with it.",
               },
             ].map((faq) => (
               <details

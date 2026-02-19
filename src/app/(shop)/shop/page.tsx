@@ -20,7 +20,7 @@ export default async function ShopPage() {
     const products = await prisma.product.findMany({
       orderBy: { name: "asc" },
     });
-    serializedProducts = products.map((p) => ({
+    serializedProducts = products.map((p: any) => ({
       id: p.id,
       name: p.name,
       slug: p.slug,

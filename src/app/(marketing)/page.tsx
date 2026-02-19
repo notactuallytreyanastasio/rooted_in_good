@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Heart, Ear, Users, BookOpen, ArrowRight, Star, Calendar } from "lucide-react";
+import { BookOpen, ArrowRight, Star, Calendar } from "lucide-react";
+import TouchpointCards from "@/components/TouchpointCards";
 
 export const metadata: Metadata = {
-  title: "20 Seconds Can Change Everything",
+  title: "9 Minutes Can Change Everything",
   description:
-    "Transform your relationship with your child through 3 simple daily touchpoints: Touch (20s), Listen (10min), and Quality Time (20min).",
+    "Transform your relationship with your child through 3 simple daily touchpoints: Focused Support (2min), Intentional Listening (5min), and Physical Connection (2min). Just 9 intentional minutes a day.",
 };
 
 export default function HomePage() {
@@ -20,7 +21,7 @@ export default function HomePage() {
               The Rooted in Good Method
             </p>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-text leading-tight">
-              20 Seconds Can Change{" "}
+              9 Minutes Can Change{" "}
               <span className="text-touch-dark">Everything</span>
             </h1>
             <p className="mt-6 text-lg sm:text-xl text-text-muted max-w-2xl mx-auto leading-relaxed">
@@ -45,66 +46,8 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 3 Touchpoints */}
-      <section className="max-w-6xl mx-auto px-4 sm:px-6 py-20">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl font-bold text-text">
-            Three Touchpoints. Every Day.
-          </h2>
-          <p className="mt-4 text-text-muted text-lg max-w-2xl mx-auto">
-            Connection doesn&apos;t require hours. It requires intention. Just 30
-            minutes and 20 seconds of daily presence.
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 animate-stagger">
-          {/* Touch */}
-          <div className="bg-white rounded-2xl p-8 border border-touch-light hover:border-touch transition-colors shadow-sm hover-lift">
-            <div className="w-14 h-14 bg-touch-light rounded-xl flex items-center justify-center mb-6">
-              <Heart className="text-touch-dark" size={28} />
-            </div>
-            <h3 className="text-xl font-bold text-text mb-2">Touch</h3>
-            <p className="text-3xl font-bold text-touch-dark mb-3">
-              20 seconds
-            </p>
-            <p className="text-text-muted leading-relaxed">
-              A hug, a hand on the shoulder, holding hands. Physical connection
-              releases oxytocin and tells your child: you are safe, you are
-              loved.
-            </p>
-          </div>
-
-          {/* Listen */}
-          <div className="bg-white rounded-2xl p-8 border border-listen-light hover:border-listen transition-colors shadow-sm hover-lift">
-            <div className="w-14 h-14 bg-listen-light rounded-xl flex items-center justify-center mb-6">
-              <Ear className="text-listen-dark" size={28} />
-            </div>
-            <h3 className="text-xl font-bold text-text mb-2">Listen</h3>
-            <p className="text-3xl font-bold text-listen-dark mb-3">
-              10 minutes
-            </p>
-            <p className="text-text-muted leading-relaxed">
-              Put the phone down. Make eye contact. Let them talk without fixing
-              anything. Sometimes all they need is to be heard.
-            </p>
-          </div>
-
-          {/* Quality Time */}
-          <div className="bg-white rounded-2xl p-8 border border-quality-light hover:border-quality transition-colors shadow-sm hover-lift">
-            <div className="w-14 h-14 bg-quality-light rounded-xl flex items-center justify-center mb-6">
-              <Users className="text-quality-dark" size={28} />
-            </div>
-            <h3 className="text-xl font-bold text-text mb-2">Quality Time</h3>
-            <p className="text-3xl font-bold text-quality-dark mb-3">
-              20 minutes
-            </p>
-            <p className="text-text-muted leading-relaxed">
-              No agenda. No goals. Follow their lead. Sit on the floor, go for a
-              walk, or just be together. Presence is the gift.
-            </p>
-          </div>
-        </div>
-      </section>
+      {/* 3 Touchpoints — click to expand */}
+      <TouchpointCards />
 
       {/* The Problem */}
       <section className="bg-gradient-to-b from-soft-gray to-warm-white">
@@ -125,7 +68,7 @@ export default function HomePage() {
             </p>
             <p className="text-text font-medium text-xl">
               The Rooted in Good Method gives you exactly that: a simple,
-              repeatable system that works in 30 minutes and 20 seconds a day.
+              repeatable rhythm that works in just 9 intentional minutes a day.
             </p>
           </div>
         </div>
@@ -153,7 +96,7 @@ export default function HomePage() {
             </h2>
             <ul className="space-y-4">
               {[
-                "The science behind why 20 seconds of touch changes everything",
+                "The science behind the 3 touchpoints and why 9 minutes changes everything",
                 "An 8-week guided journey to build lasting connection habits",
                 "Real stories from parents who transformed their families",
                 "Daily prompts, timers, and activities for each touchpoint",
@@ -190,7 +133,7 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
-                quote: "I was drowning in guilt about never being 'present enough.' This method showed me that 30 minutes of intention beats hours of distracted proximity. My daughter tells me things now she never used to.",
+                quote: "I was drowning in guilt about never being 'present enough.' This method showed me that 9 minutes of intention beats hours of distracted proximity. My daughter tells me things now she never used to.",
                 name: "Sarah M.",
                 detail: "Mom of two, ages 7 and 10",
                 color: "touch",
@@ -271,7 +214,7 @@ export default function HomePage() {
           </h2>
           <p className="text-lg text-text-muted mb-10 max-w-xl mx-auto">
             In 8 weeks, you&apos;ll have built habits that last a lifetime. Your
-            children are waiting. All they need is 30 minutes and 20 seconds.
+            children are waiting. All they need is 9 intentional minutes a day.
           </p>
           <Link
             href="/shop"

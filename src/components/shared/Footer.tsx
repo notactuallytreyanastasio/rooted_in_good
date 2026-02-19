@@ -24,6 +24,7 @@ export default function Footer() {
             <h4 className="font-semibold text-text mb-3 text-sm">The Method</h4>
             <ul className="space-y-2 text-sm text-text-muted">
               <li><Link href="/about" className="hover:text-text transition-colors">About the Method</Link></li>
+              <li><Link href="/quiz" className="hover:text-text transition-colors">Connection Assessment</Link></li>
               <li><Link href="/shop" className="hover:text-text transition-colors">Get the Book</Link></li>
               <li><Link href="/shop" className="hover:text-text transition-colors">Workbooks & Materials</Link></li>
             </ul>
